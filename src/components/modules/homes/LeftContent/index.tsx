@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 
-import { Section, MainPoster } from "components";
+import { Section, MainPoster, LastRead } from "components";
 
 const LeftContent = () => {
   return (
@@ -14,7 +14,9 @@ const LeftContent = () => {
         <Section title="Pricing & Promotion">dat</Section>
       </Row>
       <Row>
-        <Section title="Last read">dat</Section>
+        <Section title="Last read">
+          <LastRead />
+        </Section>
       </Row>
     </Col>
   );
