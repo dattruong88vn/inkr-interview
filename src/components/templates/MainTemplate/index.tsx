@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "antd";
 
-import { LeftContent, RightContent } from "components";
+import { LeftContent, RightContent } from "src/components";
 
 import { MainTemplateProps } from "./types";
 import styles from "./styles.module.css";

@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 
-import { Section, MainPoster, LastRead } from "components";
+import { Section, MainPoster, LastRead } from "src/components";
 
 const LeftContent = () => {
   return (

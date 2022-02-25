@@ -1,25 +1,27 @@
 import { Row, Col } from "antd";
 import React from "react";
 
-import { ImageThumbnail, MainPosterContent } from "components";
-import { IMAGE_PATH } from "utils/constants";
+import { ImageThumbnail, MainPosterContent } from "src/components";
+import { IMAGE_PATH } from "src/utils/constants";
 
 import { MainPosterProps } from "./types";
 import styles from "./styles.module.css";
 
 function MainPoster(props: MainPosterProps) {
   return (
-    <div className={styles.container}>
-      <ImageThumbnail
-        url={`${IMAGE_PATH}/image-1.jpg`}
-        alt=""
-        height={271}
-        width={180}
-      />
-      <div style={{ marginLeft: "24px" }}>
+    <Row className={styles.container} gutter={24}>
+      <Col>
+        <ImageThumbnail
+          url={`${IMAGE_PATH}/image-1.jpg`}
+          alt=""
+          height={271}
+          width={180}
+        />
+      </Col>
+      <Col>
         <MainPosterContent />
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 }
 

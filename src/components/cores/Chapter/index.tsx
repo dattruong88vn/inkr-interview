@@ -1,12 +1,11 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { ImageThumbnail } from "components";
+import { ImageThumbnail } from "src/components";
 
 import { ChapterProps } from "./types";
 import styles from "./styles.module.css";
 
 function Chapter({ title, src, lastSeen, paid, price }: ChapterProps) {
-  console.log(lastSeen);
   const style = lastSeen
     ? {
         marginLeft: "-12px",

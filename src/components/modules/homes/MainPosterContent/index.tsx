@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "antd";
 
-import { Tag, CustomButton } from "components";
+import { Tag, CustomButton } from "src/components";
 import styles from "./styles.module.css";
 
 function MainPosterContent(props) {

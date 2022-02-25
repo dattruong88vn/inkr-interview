@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 import Head from "next/head";
-import { MainTemplate } from "components";
+import { MainTemplate } from "src/components";
 
 import styles from "../styles/home.module.css";
 

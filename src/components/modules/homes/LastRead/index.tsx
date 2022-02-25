@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Chapter } from "components";
-import { IMAGE_PATH } from "utils/constants";
+import { Chapter } from "src/components";
+import { IMAGE_PATH } from "src/utils/constants";
 
 import { LastReadProps } from "./types";
 

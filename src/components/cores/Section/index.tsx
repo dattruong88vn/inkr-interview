@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Title } from "components";
+import { Title } from "src/components";
 import { SectionProps } from "./types";
 import styles from "./styles.module.css";
 

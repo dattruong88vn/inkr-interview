@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 
-import { Section } from "components";
+import { Section } from "src/components";
 
 const RightContent = () => {
   return (
