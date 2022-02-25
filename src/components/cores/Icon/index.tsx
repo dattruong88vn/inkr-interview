@@ -4,14 +4,15 @@ import iconSet from "public/fonts/selection.json";
 import { IconProps } from "./types";
 import styles from "./styles.module.css";
 
-export default function Icon({ color, size, icon }: IconProps) {
-  console.log(iconSet);
-
+export default function Icon({ size, icon, style }: IconProps) {
   return (
-    <div className={styles.icon_wrapper}>
-      <IcomoonReact iconSet={iconSet} color={color} size={size} icon={icon}>
-        Icon
-      </IcomoonReact>
+    <div className={styles.icon_wrapper} style={style}>
+      <IcomoonReact
+        iconSet={iconSet}
+        color="rgba(255, 255, 255, 0.85)"
+        size={size || "16px"}
+        icon={icon}
+      />
     </div>
   );
 }

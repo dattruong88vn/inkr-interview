@@ -1,5 +1,6 @@
 export interface IconProps {
     color?: string,
-    size: string | number,
+    size?: string | number,
     icon: string,
+    style?: {}
 }

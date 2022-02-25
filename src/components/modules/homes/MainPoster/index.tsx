@@ -18,7 +18,7 @@ function MainPoster(props: MainPosterProps) {
           width={180}
         />
       </Col>
-      <Col>
+      <Col flex="auto">
         <MainPosterContent />
       </Col>
     </Row>

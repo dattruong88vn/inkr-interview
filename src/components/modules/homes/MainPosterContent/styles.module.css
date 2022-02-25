@@ -6,6 +6,10 @@
   align-items: flex-start;
 }
 
+.container > div {
+  width: 100%;
+}
+
 .title {
   color: #fff;
   font-size: 30px;
