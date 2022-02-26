@@ -67,7 +67,7 @@ function Chapter({
         <Col span={4}>
           {price ? (
             <Row align="middle" justify="end">
-              <Icon icon="union" border={false} />
+              <Icon icon="union" />
               &nbsp;
               <span>{price}</span>
             </Row>

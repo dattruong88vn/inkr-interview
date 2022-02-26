@@ -17,13 +17,18 @@ function MainPosterContent(props: MainPosterContentProps) {
           <Col>
             <Row justify="space-between" align="middle">
               <Col>
-                <Icon icon="share-alt" color={LIST_COLOR.COLOR_3} />
+                <Icon
+                  icon="share-alt"
+                  color={LIST_COLOR.COLOR_3}
+                  border={true}
+                />
               </Col>
               <Col>
                 <Icon
                   icon="more"
                   style={{ marginLeft: "8px" }}
                   color={LIST_COLOR.COLOR_3}
+                  border={true}
                 />
               </Col>
             </Row>
@@ -35,7 +40,7 @@ function MainPosterContent(props: MainPosterContentProps) {
         </div>
         <Row style={{ marginBottom: "25px" }}>
           <div className={styles.mainposter_content_group_info}>
-            <Icon icon="read" border={false} color={LIST_COLOR.COLOR_1} />
+            <Icon icon="read" color={LIST_COLOR.COLOR_1} />
             <span className={styles.mainposter_content_info}>74,483</span>
           </div>
           <div className={styles.mainposter_content_group_info}>

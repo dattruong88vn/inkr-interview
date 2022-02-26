@@ -9,6 +9,7 @@ const COLOR_4 = "rgba(255, 255, 255, 0.3)";
 
 const COLOR_INKR_PURPLE = "#A379FF";
 const COLOR_INKR_PURPLE_2 = "#651FFF";
+const COLOR_INKR_PURPLE_6 = "#844CFF";
 const COLOR_NEUTRAL = "#262626";
 
 export const LIST_COLOR = {
@@ -18,6 +19,7 @@ export const LIST_COLOR = {
   COLOR_4,
   COLOR_INKR_PURPLE,
   COLOR_INKR_PURPLE_2,
+  COLOR_INKR_PURPLE_6,
   COLOR_NEUTRAL,
 };
 

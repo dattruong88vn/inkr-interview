@@ -10,7 +10,7 @@ export default function Icon({
   size,
   icon,
   style,
-  border = true,
+  border = false,
   color,
 }: IconProps) {
   const renderIcon = () => {

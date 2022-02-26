@@ -48,13 +48,14 @@ function LastRead(props: LastReadProps) {
         <Col span={12}>
           <Row justify="end">
             <Col>
-              <Icon icon="belt" color={LIST_COLOR.COLOR_3} />
+              <Icon icon="belt" color={LIST_COLOR.COLOR_3} border={true} />
             </Col>
             <Col>
               <Icon
                 icon="sort-asc"
                 style={{ marginLeft: "8px" }}
                 color={LIST_COLOR.COLOR_3}
+                border={true}
               />
             </Col>
           </Row>

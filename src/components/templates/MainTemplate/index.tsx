@@ -9,7 +9,10 @@ import styles from "./styles.module.css";
 const MainTemplate = (props: MainTemplateProps) => {
   return (
     <div className={styles.container}>
-      <Row gutter={{ xs: 32, xxl: 24 }} justify="space-between">
+      <Row
+        gutter={{ xs: 32, sm: 32, md: 32, lg: 32, xl: 32, xxl: 24 }}
+        justify="space-between"
+      >
         <LeftContent />
         <RightContent />
       </Row>

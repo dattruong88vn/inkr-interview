@@ -33,7 +33,7 @@ function ImageThumbnail({
   const renderLock = () => {
     return (
       <div className={styles.lock}>
-        <Icon icon="lock" border={false} color={LIST_COLOR.COLOR_NEUTRAL} />
+        <Icon icon="lock" color={LIST_COLOR.COLOR_NEUTRAL} />
       </div>
     );
   };
