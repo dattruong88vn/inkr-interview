@@ -4,6 +4,8 @@ import iconSet from "public/fonts/selection.json";
 import { IconProps } from "./types";
 import styles from "./styles.module.css";
 
+import { LIST_COLOR, LIST_FONT_SIZE } from "src/utils/constants";
+
 export default function Icon({
   size,
   icon,
@@ -11,25 +13,24 @@ export default function Icon({
   border = true,
   color,
 }: IconProps) {
+  const renderIcon = () => {
+    return (
+      <IcomoonReact
+        iconSet={iconSet}
+        color={color}
+        size={size || LIST_FONT_SIZE.FONT_SIZE_2}
+        icon={icon}
+      />
+    );
+  };
+
   if (border) {
     return (
       <div className={styles.icon_wrapper} style={style}>
-        <IcomoonReact
-          iconSet={iconSet}
-          color={color || "rgba(255, 255, 255, 0.85)"}
-          size={size || "16px"}
-          icon={icon}
-        />
+        {renderIcon()}
       </div>
     );
   }
 
-  return (
-    <IcomoonReact
-      iconSet={iconSet}
-      color={color || "rgba(255, 255, 255, 0.85)"}
-      size={size || "16px"}
-      icon={icon}
-    />
-  );
+  return renderIcon();
 }

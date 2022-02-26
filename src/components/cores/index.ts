@@ -5,3 +5,4 @@ export { default as Tag } from "./Tag";
 export { default as CustomButton } from "./CustomButton";
 export { default as Chapter } from "./Chapter";
 export { default as Icon } from "./Icon";
+export { default as CustomText } from "./CustomText";

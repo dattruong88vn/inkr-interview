@@ -1,0 +1,29 @@
+.pricing_promotion_container {
+  margin-top: 16px;
+}
+
+.pricing_promotion_row {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #141414;
+}
+
+.pricing_promotion_row1 {
+  border-radius: 8px 8px 0 0;
+}
+.pricing_promotion_row3 {
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 16px;
+}
+
+.pricing_promotion_col {
+  padding: 16px;
+}
+
+.pricing_promotion_col:not(:first-child) {
+  border-left: 1px solid #141414;
+}
+
+.pricing_promotion_bottom_text {
+  text-align: center;
+  cursor: pointer;
+}

@@ -4,6 +4,7 @@ import { Row, Col } from "antd";
 import { Tag, CustomButton, Icon } from "src/components";
 import { MainPosterContentProps } from "./types";
 import styles from "./styles.module.css";
+import { LIST_COLOR } from "src/utils/constants";
 
 function MainPosterContent(props: MainPosterContentProps) {
   return (
@@ -16,10 +17,14 @@ function MainPosterContent(props: MainPosterContentProps) {
           <Col>
             <Row justify="space-between" align="middle">
               <Col>
-                <Icon icon="share-alt" />
+                <Icon icon="share-alt" color={LIST_COLOR.COLOR_3} />
               </Col>
               <Col>
-                <Icon icon="more" style={{ marginLeft: "8px" }} />
+                <Icon
+                  icon="more"
+                  style={{ marginLeft: "8px" }}
+                  color={LIST_COLOR.COLOR_3}
+                />
               </Col>
             </Row>
           </Col>
@@ -30,19 +35,11 @@ function MainPosterContent(props: MainPosterContentProps) {
         </div>
         <Row style={{ marginBottom: "25px" }}>
           <div className={styles.mainposter_content_group_info}>
-            <Icon
-              icon="read"
-              border={false}
-              color="rgba(255, 255, 255, 0.45)"
-            />
+            <Icon icon="read" border={false} color={LIST_COLOR.COLOR_1} />
             <span className={styles.mainposter_content_info}>74,483</span>
           </div>
           <div className={styles.mainposter_content_group_info}>
-            <Icon
-              icon="like"
-              border={false}
-              color="rgba(255, 255, 255, 0.45)"
-            />
+            <Icon icon="like" border={false} color={LIST_COLOR.COLOR_1} />
             <span className={styles.mainposter_content_info}>15,863</span>
           </div>
         </Row>
