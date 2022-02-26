@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Typography } from "antd";
 import React from "react";
 
 import { CustomText, DotInline, Icon } from "src/components";
@@ -11,6 +11,7 @@ import {
 import styles from "./styles.module.css";
 import {} from "./types";
 
+const { Text } = Typography;
 const PricingPromotion = () => {
   const renderRow1 = () => {
     return (
@@ -101,8 +102,15 @@ const PricingPromotion = () => {
             </CustomText>
           </Row>
         </Col>
-        <Col className={styles.pricing_promotion_col} span={12}>
-          Row 2
+        <Col className={styles.pricing_promotion_col} span={5}>
+          <Row justify="end">
+            <div
+              className={`${styles.pricing_promotion_unit} ${styles.pricing_promotion_currency}`}
+            >
+              <Icon icon="union" border={false} />
+              <span>35</span>
+            </div>
+          </Row>
         </Col>
       </Row>
     );
@@ -140,7 +148,40 @@ const PricingPromotion = () => {
           </Row>
         </Col>
         <Col className={styles.pricing_promotion_col} span={12}>
-          Row 3
+          <Row justify="end">
+            <div
+              className={`${styles.pricing_promotion_unit} ${styles.pricing_promotion_discount}`}
+            >
+              <CustomText
+                color={LIST_COLOR.COLOR_3}
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_4}
+                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_4}
+              >
+                -50%
+              </CustomText>
+            </div>
+            <div
+              className={`${styles.pricing_promotion_unit} ${styles.pricing_promotion_currency_discount}`}
+            >
+              <Icon icon="union" border={false} />
+              &nbsp;
+              <CustomText
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_5}
+                color={LIST_COLOR.COLOR_4}
+                style={{ textDecorationLine: "line-through" }}
+              >
+                35
+              </CustomText>
+              &nbsp;
+              <CustomText
+                color={LIST_COLOR.COLOR_3}
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_2}
+                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              >
+                18
+              </CustomText>
+            </div>
+          </Row>
         </Col>
       </Row>
     );
