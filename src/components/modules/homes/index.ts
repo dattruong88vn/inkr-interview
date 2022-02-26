@@ -13,3 +13,7 @@ export { default as Comments } from "./Comments";
 export { default as CommentContent } from "./CommentContent";
 export { default as CommentInput } from "./CommentInput";
 export { default as CommentAvatar } from "./CommentAvatar";
+export { default as DescriptionAbout } from "./DescriptionAbout";
+export { default as SummaryDetails } from "./SummaryDetails";
+export { default as SummaryImages } from "./SummaryImages";
+export { default as SummaryInformation } from "./SummaryInformation";

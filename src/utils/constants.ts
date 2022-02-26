@@ -72,3 +72,6 @@ export const DEFAULT_STYLE_TEXT = {
 // comment
 export const COMMENT_DEFAULT =
   "I had no idea such a sequel was coming as I thought the show had ended and Kyoto animation took a hard hit from the tragedy but currently 4 episodes in as of writing this review, and I love every second of it.";
+
+export const SUMMARY_DEFAULT =
+  "Kasane is an ugly girl who is severely bullied by her classmates because of her appearance; makeing thing worse, Kasane's mother was a beautiful actress to whom Kasane is a dark contrast, even though she is as talented as her mother. However, there is nothing to do with this";

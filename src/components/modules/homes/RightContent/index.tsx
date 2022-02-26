@@ -1,13 +1,20 @@
 import { Row, Col } from "antd";
 
-import { Section, GetApp, RelatedTitles } from "src/components";
+import {
+  Section,
+  GetApp,
+  RelatedTitles,
+  DescriptionAbout,
+} from "src/components";
 import { Comments } from "..";
 
 const RightContent = () => {
   return (
     <Col xs={9} xl={8}>
       <Row>
-        <Section title="About This">dat</Section>
+        <Section title="About This">
+          <DescriptionAbout />
+        </Section>
       </Row>
       <Row>
         <Section title="Related Titles">
