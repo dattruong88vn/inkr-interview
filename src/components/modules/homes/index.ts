@@ -12,3 +12,4 @@ export { default as RelatedItem } from "./RelatedItem";
 export { default as Comments } from "./Comments";
 export { default as CommentContent } from "./CommentContent";
 export { default as CommentInput } from "./CommentInput";
+export { default as CommentAvatar } from "./CommentAvatar";

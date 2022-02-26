@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CommentContent, CommentInput } from "src/components";
+import { CommentContent, CommentInput, CustomButton } from "src/components";
 import { CommentsProps } from "./types";
 import styles from "./styles.module.css";
 import { COMMENT_DEFAULT } from "src/utils/constants";
@@ -20,7 +20,7 @@ const Comments = (props: CommentsProps) => {
         />
       </div>
       <div className={styles.comments_input}>
-        <CommentInput />
+        <CommentInput userAvatar="/images/avatar-2.jpg" userName="Mary" />
       </div>
     </div>
   );

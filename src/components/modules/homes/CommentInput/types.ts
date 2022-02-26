@@ -1,1 +1,4 @@
-export interface CommentInputProps {}
+export interface CommentInputProps {
+  userAvatar: string;
+  userName: string;
+}

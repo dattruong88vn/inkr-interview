@@ -3,7 +3,13 @@ import { Row, Col } from "antd";
 
 import { CommentContentProps } from "./types";
 import styles from "./styles.module.css";
-import { CustomImage, CustomText, DotInline, Icon } from "src/components";
+import {
+  CustomImage,
+  CustomText,
+  DotInline,
+  Icon,
+  CommentAvatar,
+} from "src/components";
 import {
   COMMENT_DEFAULT,
   LIST_COLOR,
@@ -29,9 +35,7 @@ const CommentContent = ({
       className={styles.comment_content_wrapper}
     >
       <Col flex="none">
-        <div className={styles.comment_avatar}>
-          <CustomImage url={userAvatar} alt={userName} width={32} height={32} />
-        </div>
+        <CommentAvatar avatar={userAvatar} name={userName} />
       </Col>
       <Col flex="auto">
         <Row gutter={8} style={{ marginBottom: 4 }}>
