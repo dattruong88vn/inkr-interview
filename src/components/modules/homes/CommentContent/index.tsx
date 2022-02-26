@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Typography } from "antd";
 
 import { CommentContentProps } from "./types";
 import styles from "./styles.module.css";
@@ -16,6 +16,8 @@ import {
   LIST_FONT_SIZE,
   LIST_LINE_HEIGHT,
 } from "src/utils/constants";
+
+const { Text } = Typography;
 
 const CommentContent = ({
   userAvatar,
@@ -40,22 +42,26 @@ const CommentContent = ({
       <Col flex="auto">
         <Row gutter={8} style={{ marginBottom: 4 }}>
           <Col>
-            <CustomText
-              color={LIST_COLOR.COLOR_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_18}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_1,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_12,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_18,
+              }}
             >
               {userName}
-            </CustomText>
+            </Text>
           </Col>
           <Col>
-            <CustomText
-              color={LIST_COLOR.COLOR_NEUTRAL_5}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_11}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_18}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_NEUTRAL_5,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_11,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_18,
+              }}
             >
               Commented on {chapter} <DotInline /> {timeAgo} ago
-            </CustomText>
+            </Text>
           </Col>
         </Row>
         <Row style={{ marginBottom: 4 }}>
@@ -69,30 +75,36 @@ const CommentContent = ({
         </Row>
         <Row align="middle">
           <Icon icon="like" color={LIST_COLOR.COLOR_3} />
-          <CustomText
-            color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
-            style={{ margin: "0 10px 0 8px" }}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_1,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_12,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+              margin: "0 10px 0 8px",
+            }}
           >
             {likes}
-          </CustomText>
+          </Text>
           <Icon icon="message" color={LIST_COLOR.COLOR_3} />
-          <CustomText
-            color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
-            style={{ margin: "0 10px 0 8px" }}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_1,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_12,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+              margin: "0 10px 0 8px",
+            }}
           >
             {shares}
-          </CustomText>
-          <CustomText
-            color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+          </Text>
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_1,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+            }}
           >
             Reply
-          </CustomText>
+          </Text>
         </Row>
       </Col>
     </Row>

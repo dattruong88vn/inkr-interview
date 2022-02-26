@@ -1,14 +1,16 @@
 import React from "react";
-import { Row, Col, Progress } from "antd";
+import { Row, Col, Typography } from "antd";
 import { CustomText, Icon, ImageThumbnail } from "src/components";
 
-import { ChapterProps, CustomStyleProps } from "./types";
+import { ChapterProps } from "./types";
 import styles from "./styles.module.css";
 import {
   LIST_COLOR,
   LIST_FONT_SIZE,
   LIST_LINE_HEIGHT,
 } from "src/utils/constants";
+
+const { Text } = Typography;
 
 function Chapter({
   title,
@@ -42,23 +44,27 @@ function Chapter({
             </Col>
             <Col>
               <Row>
-                <CustomText
-                  color={LIST_COLOR.COLOR_2}
-                  fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-                  lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+                <Text
+                  style={{
+                    color: LIST_COLOR.COLOR_2,
+                    fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                    lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+                  }}
                 >
                   {title}
-                </CustomText>
+                </Text>
               </Row>
               {lastRead && (
                 <Row>
-                  <CustomText
-                    color={LIST_COLOR.COLOR_1}
-                    fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
-                    lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_20}
+                  <Text
+                    style={{
+                      color: LIST_COLOR.COLOR_1,
+                      fontSize: LIST_FONT_SIZE.FONT_SIZE_12,
+                      lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_20,
+                    }}
                   >
                     Last read {lastRead}{" "}
-                  </CustomText>
+                  </Text>
                 </Row>
               )}
             </Col>
@@ -73,13 +79,15 @@ function Chapter({
             </Row>
           ) : !lastRead ? (
             <Row justify="end">
-              <CustomText
-                color={LIST_COLOR.COLOR_2}
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+              <Text
+                style={{
+                  color: LIST_COLOR.COLOR_2,
+                  fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                  lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+                }}
               >
                 FREE
-              </CustomText>
+              </Text>
             </Row>
           ) : null}
         </Col>

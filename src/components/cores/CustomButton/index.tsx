@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, Row, Col } from "antd";
+import { Button, Row, Col, Typography } from "antd";
 
-import { CustomText, Icon } from "src/components";
+import { Icon } from "src/components";
 
 import { CustomButtonProps } from "./types";
 import styles from "./styles.module.css";
@@ -10,6 +10,8 @@ import {
   LIST_FONT_SIZE,
   LIST_LINE_HEIGHT,
 } from "src/utils/constants";
+
+const { Text } = Typography;
 
 function CustomButton({ text, icon, bgColor }: CustomButtonProps) {
   return (
@@ -24,13 +26,15 @@ function CustomButton({ text, icon, bgColor }: CustomButtonProps) {
           </Col>
         )}
         <Col>
-          <CustomText
-            color={LIST_COLOR.COLOR_PRIMARY_INVERSE}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_PRIMARY_INVERSE,
+              fontWeight: LIST_FONT_SIZE.FONT_SIZE_14,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+            }}
           >
             {text}
-          </CustomText>
+          </Text>
         </Col>
       </Row>
     </Button>
