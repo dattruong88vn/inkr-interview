@@ -1,4 +1,4 @@
-.container {
+.mainposter_content_container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -6,11 +6,11 @@
   align-items: flex-start;
 }
 
-.container > div {
+.mainposter_content_container > div {
   width: 100%;
 }
 
-.title {
+.mainposter_content_title {
   color: #fff;
   font-size: 30px;
   font-weight: 500;
@@ -18,7 +18,7 @@
   margin-bottom: 2px;
 }
 
-.text {
+.mainposter_content_text {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -26,13 +26,20 @@
   margin-bottom: 6px;
 }
 
-.group_icon {
-  margin-right: 16px;
+.mainposter_content_text span::before {
+  content: "\2022";
 }
 
-.icon {
+.mainposter_content_group_info {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.mainposter_content_info {
   font-size: 14px;
   font-weight: normal;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.65);
+  margin-left: 4px;
 }

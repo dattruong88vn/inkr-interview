@@ -7,11 +7,11 @@ import styles from "./styles.module.css";
 
 function MainPosterContent(props: MainPosterContentProps) {
   return (
-    <div className={styles.container}>
+    <div className={styles.mainposter_content_container}>
       <div>
         <Row justify="space-between">
           <Col>
-            <div className={styles.title}>Kasane</div>
+            <div className={styles.mainposter_content_title}>Kasane</div>
           </Col>
           <Col>
             <Row justify="space-between" align="middle">
@@ -24,16 +24,26 @@ function MainPosterContent(props: MainPosterContentProps) {
             </Row>
           </Col>
         </Row>
-        <div className={styles.text}>By Kodansa</div>
-        <div className={styles.text}>Drama 10 Chapters</div>
+        <div className={styles.mainposter_content_text}>By Kodansa</div>
+        <div className={styles.mainposter_content_text}>
+          Drama <span /> 10 Chapters
+        </div>
         <Row style={{ marginBottom: "25px" }}>
-          <div className={styles.group_icon}>
-            <span></span>
-            <span className={styles.icon}>74,483</span>
+          <div className={styles.mainposter_content_group_info}>
+            <Icon
+              icon="read"
+              border={false}
+              color="rgba(255, 255, 255, 0.45)"
+            />
+            <span className={styles.mainposter_content_info}>74,483</span>
           </div>
-          <div className={styles.group_icon}>
-            <span></span>
-            <span className={styles.icon}>15,863</span>
+          <div className={styles.mainposter_content_group_info}>
+            <Icon
+              icon="like"
+              border={false}
+              color="rgba(255, 255, 255, 0.45)"
+            />
+            <span className={styles.mainposter_content_info}>15,863</span>
           </div>
         </Row>
         <Row>
