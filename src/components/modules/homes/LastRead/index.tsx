@@ -75,6 +75,42 @@ function LastRead(props: LastReadProps) {
         paid={false}
         price={5}
       />
+      <Chapter
+        title="Chapter 5"
+        src={`${IMAGE_PATH}/image-chapter.jpg`}
+        paid={false}
+        price={5}
+      />
+      <Chapter
+        title="Chapter 6"
+        src={`${IMAGE_PATH}/image-chapter.jpg`}
+        paid={false}
+        price={5}
+      />
+      <Chapter
+        title="Chapter 7"
+        src={`${IMAGE_PATH}/image-chapter.jpg`}
+        paid={false}
+        price={5}
+      />
+      <Chapter
+        title="Chapter 8"
+        src={`${IMAGE_PATH}/image-chapter.jpg`}
+        paid={false}
+        price={5}
+      />
+      <Chapter
+        title="Chapter 9"
+        src={`${IMAGE_PATH}/image-chapter.jpg`}
+        paid={false}
+        price={5}
+      />
+      <Chapter
+        title="Chapter 10"
+        src={`${IMAGE_PATH}/image-chapter.jpg`}
+        paid={false}
+        price={5}
+      />
     </div>
   );
 }

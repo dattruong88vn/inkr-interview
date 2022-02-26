@@ -5,3 +5,4 @@ export { default as CustomButton } from "./CustomButton";
 export { default as Icon } from "./Icon";
 export { default as CustomText } from "./CustomText";
 export { default as DotInline } from "./DotInline";
+export { default as CustomImage } from "./CustomImage";

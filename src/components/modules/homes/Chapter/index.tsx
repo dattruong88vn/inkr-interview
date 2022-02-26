@@ -37,6 +37,7 @@ function Chapter({
                 width={78}
                 height={62}
                 progress={progress}
+                lock={!!price}
               />
             </Col>
             <Col>

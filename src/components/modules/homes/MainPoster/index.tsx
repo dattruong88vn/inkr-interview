@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import React from "react";
 
-import { ImageThumbnail, MainPosterContent } from "src/components";
+import { CustomImage, MainPosterContent } from "src/components";
 import { IMAGE_PATH } from "src/utils/constants";
 
 import { MainPosterProps } from "./types";
@@ -11,7 +11,7 @@ function MainPoster(props: MainPosterProps) {
   return (
     <Row className={styles.main_poster_container} gutter={24}>
       <Col>
-        <ImageThumbnail
+        <CustomImage
           url={`${IMAGE_PATH}/image-1.jpg`}
           alt=""
           height={271}

@@ -4,4 +4,5 @@ export interface ImageThumbnailProps {
   width: number;
   height: number;
   progress?: number;
+  lock?: boolean;
 }
