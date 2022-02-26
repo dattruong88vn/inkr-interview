@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Typography } from "antd";
-import { CustomText, Icon, ImageThumbnail } from "src/components";
+import { Icon, ImageThumbnail } from "src/components";
 
 import { ChapterProps } from "./types";
 import styles from "./styles.module.css";

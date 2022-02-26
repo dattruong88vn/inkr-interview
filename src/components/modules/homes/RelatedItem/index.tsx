@@ -1,7 +1,7 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Typography } from "antd";
 
-import { CustomImage, CustomText, Icon } from "src/components";
+import { CustomImage, Icon } from "src/components";
 import styles from "./styles.module.css";
 import { RelatedItemProps } from "./types";
 import {
@@ -9,6 +9,8 @@ import {
   LIST_FONT_SIZE,
   LIST_LINE_HEIGHT,
 } from "src/utils/constants";
+
+const { Text } = Typography;
 
 const RelatedItem = ({ url, author, reads, name }: RelatedItemProps) => {
   return (
@@ -18,43 +20,51 @@ const RelatedItem = ({ url, author, reads, name }: RelatedItemProps) => {
       </Col>
       <Col>
         <Row>
-          <CustomText
-            color={LIST_COLOR.COLOR_3}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_3,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_16,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+            }}
           >
             {name}
-          </CustomText>
+          </Text>
         </Row>
         <Row align="middle">
           <Icon icon="currency" border={false} />
           &nbsp;
-          <CustomText
-            color={LIST_COLOR.COLOR_INKR_PURPLE_6}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
-            fontWeight="500"
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_INKR_PURPLE_6,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_16,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+              fontWeight: "500",
+            }}
           >
             EXCLUSIVE
-          </CustomText>
+          </Text>
         </Row>
         <Row>
-          <CustomText
-            color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_1,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+            }}
           >
             {author}
-          </CustomText>
+          </Text>
         </Row>
         <Row>
-          <CustomText
-            color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_1,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+            }}
           >
             {reads} reads
-          </CustomText>
+          </Text>
         </Row>
       </Col>
     </Row>

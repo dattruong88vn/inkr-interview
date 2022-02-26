@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Row, Col, Typography, Button } from "antd";
+import { CustomButton, Tag, SummaryDetails } from "src/components";
 
 import { DescriptionAboutProps } from "./types";
 import styles from "./styles.module.css";
-import { CustomButton, CustomText, Tag, SummaryDetails } from "src/components";
 import {
   LIST_COLOR,
   LIST_FONT_SIZE,

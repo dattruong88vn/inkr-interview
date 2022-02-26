@@ -1,7 +1,7 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Typography } from "antd";
 
-import { Chapter, CustomText, Icon } from "src/components";
+import { Chapter, Icon } from "src/components";
 import {
   IMAGE_PATH,
   LIST_COLOR,
@@ -11,6 +11,8 @@ import {
 
 import { LastReadProps } from "./types";
 import styles from "./styles.module.css";
+
+const { Text } = Typography;
 
 function LastRead(props: LastReadProps) {
   return (
@@ -26,23 +28,26 @@ function LastRead(props: LastReadProps) {
       <Row align="middle" className={styles.last_read_list_chapter}>
         <Col span={12}>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_20}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_28}
-              style={{ marginBottom: 4 }}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_3,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_20,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_28,
+              }}
             >
               10 Chapters
-            </CustomText>
+            </Text>
           </Row>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_2}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_2,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+              }}
             >
               New chapter every Thursday
-            </CustomText>
+            </Text>
           </Row>
         </Col>
         <Col span={12}>

@@ -1,15 +1,9 @@
 import React from "react";
 import { Row, Col, Typography } from "antd";
+import { DotInline, Icon, CommentAvatar } from "src/components";
 
 import { CommentContentProps } from "./types";
 import styles from "./styles.module.css";
-import {
-  CustomImage,
-  CustomText,
-  DotInline,
-  Icon,
-  CommentAvatar,
-} from "src/components";
 import {
   COMMENT_DEFAULT,
   LIST_COLOR,
@@ -65,13 +59,15 @@ const CommentContent = ({
           </Col>
         </Row>
         <Row style={{ marginBottom: 4 }}>
-          <CustomText
-            color={LIST_COLOR.COLOR_3}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_3,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+            }}
           >
             {COMMENT_DEFAULT}
-          </CustomText>
+          </Text>
         </Row>
         <Row align="middle">
           <Icon icon="like" color={LIST_COLOR.COLOR_3} />

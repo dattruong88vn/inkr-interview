@@ -1,7 +1,7 @@
 import { Row, Col, Typography } from "antd";
 import React from "react";
 
-import { CustomText, DotInline, Icon } from "src/components";
+import { DotInline, Icon } from "src/components";
 import {
   LIST_COLOR,
   LIST_FONT_SIZE,
@@ -21,22 +21,26 @@ const PricingPromotion = () => {
       >
         <Col className={styles.pricing_promotion_col} span={12}>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_1,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+              }}
             >
               FREE
-            </CustomText>
+            </Text>
           </Row>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_3,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+              }}
             >
               3 Chapters
-            </CustomText>
+            </Text>
           </Row>
         </Col>
         <Col
@@ -44,31 +48,38 @@ const PricingPromotion = () => {
           span={12}
         >
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_1,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+              }}
             >
               LOCKED
-            </CustomText>
+            </Text>
           </Row>
           <Row align="middle">
-            <CustomText
-              color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_3,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+              }}
             >
               7 Chapters&nbsp;
-            </CustomText>
-            <CustomText
-              color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
-              style={{ display: "flex", alignItems: "center" }}
+            </Text>
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_3,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+                display: "flex",
+                alignItems: "center",
+              }}
             >
               <span>(&nbsp;</span>
               <Icon icon="union" border={false} /> <span>&nbsp;5/chapter)</span>
-            </CustomText>
+            </Text>
           </Row>
         </Col>
       </Row>
@@ -84,22 +95,26 @@ const PricingPromotion = () => {
       >
         <Col className={styles.pricing_promotion_col} span={12}>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_3,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+              }}
             >
               Total Price
-            </CustomText>
+            </Text>
           </Row>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_1,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+              }}
             >
               Instant access to all chapters <DotInline /> No ad
-            </CustomText>
+            </Text>
           </Row>
         </Col>
         <Col className={styles.pricing_promotion_col} span={5}>
@@ -125,26 +140,31 @@ const PricingPromotion = () => {
       >
         <Col className={styles.pricing_promotion_col} span={12}>
           <Row align="middle">
-            <CustomText
-              color={LIST_COLOR.COLOR_INKR_PURPLE}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
-              fontWeight="500"
-              style={{ display: "flex", alignItems: "center" }}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_INKR_PURPLE,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+                fontWeight: 500,
+                display: "flex",
+                alignItems: "center",
+              }}
             >
               <span>Save money with INKR Extra &nbsp;</span>
               <Icon border={false} icon="currency" />
-            </CustomText>
+            </Text>
           </Row>
           <Row>
-            <CustomText
-              color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+            <Text
+              style={{
+                color: LIST_COLOR.COLOR_1,
+                fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+                lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+              }}
             >
               Instant access to all chapters <DotInline /> No ad <DotInline />{" "}
               Extra saving
-            </CustomText>
+            </Text>
           </Row>
         </Col>
         <Col className={styles.pricing_promotion_col} span={12}>
@@ -152,34 +172,41 @@ const PricingPromotion = () => {
             <div
               className={`${styles.pricing_promotion_unit} ${styles.pricing_promotion_discount}`}
             >
-              <CustomText
-                color={LIST_COLOR.COLOR_3}
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_20}
-                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_28}
+              <Text
+                style={{
+                  color: LIST_COLOR.COLOR_3,
+                  fontSize: LIST_FONT_SIZE.FONT_SIZE_20,
+                  lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_28,
+                }}
               >
                 -50%
-              </CustomText>
+              </Text>
             </div>
             <div
               className={`${styles.pricing_promotion_unit} ${styles.pricing_promotion_currency_discount}`}
             >
               <Icon icon="union" border={false} />
               &nbsp;
-              <CustomText
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
-                color={LIST_COLOR.COLOR_4}
-                style={{ textDecorationLine: "line-through" }}
+              <Text
+                style={{
+                  color: LIST_COLOR.COLOR_4,
+                  fontSize: LIST_FONT_SIZE.FONT_SIZE_12,
+                  lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_20,
+                  textDecorationLine: "line-through",
+                }}
               >
                 35
-              </CustomText>
+              </Text>
               &nbsp;
-              <CustomText
-                color={LIST_COLOR.COLOR_3}
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
-                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
+              <Text
+                style={{
+                  color: LIST_COLOR.COLOR_3,
+                  fontSize: LIST_FONT_SIZE.FONT_SIZE_16,
+                  lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_24,
+                }}
               >
                 18
-              </CustomText>
+              </Text>
             </div>
           </Row>
         </Col>
@@ -195,12 +222,15 @@ const PricingPromotion = () => {
 
       <Row className={styles.pricing_promotion_bottom_text}>
         <Col span={24}>
-          <CustomText
-            color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+          <Text
+            style={{
+              color: LIST_COLOR.COLOR_1,
+              fontSize: LIST_FONT_SIZE.FONT_SIZE_14,
+              lineHeight: LIST_LINE_HEIGHT.LINE_HEIGHT_22,
+            }}
           >
             Want to read for free? Learn more
-          </CustomText>
+          </Text>
         </Col>
       </Row>
     </div>

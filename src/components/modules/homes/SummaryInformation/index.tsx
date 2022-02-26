@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOMServer from "react-dom/server";
 import { Row, Col, Typography } from "antd";
 
 import { CopyrightOutlined } from "@ant-design/icons";
 
 import { SummaryInformationProps, OtherFactsKeys } from "./types";
-import styles from "./styles.module.css";
-import { CustomImage, CustomText, CommentAvatar } from "src/components";
+import { CommentAvatar } from "src/components";
 import {
   LIST_COLOR,
   LIST_FONT_SIZE,
