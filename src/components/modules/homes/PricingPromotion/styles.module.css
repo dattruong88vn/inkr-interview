@@ -19,7 +19,7 @@
   padding: 16px;
 }
 
-.pricing_promotion_col:not(:first-child) {
+.pricing_promotion_col_right {
   border-left: 1px solid #141414;
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
 
-import { Tag, CustomButton, Icon } from "src/components";
+import { Tag, CustomButton, Icon, DotInline } from "src/components";
 import { MainPosterContentProps } from "./types";
 import styles from "./styles.module.css";
 import { LIST_COLOR } from "src/utils/constants";
@@ -31,7 +31,7 @@ function MainPosterContent(props: MainPosterContentProps) {
         </Row>
         <div className={styles.mainposter_content_text}>By Kodansa</div>
         <div className={styles.mainposter_content_text}>
-          Drama <span /> 10 Chapters
+          Drama <DotInline /> 10 Chapters
         </div>
         <Row style={{ marginBottom: "25px" }}>
           <div className={styles.mainposter_content_group_info}>

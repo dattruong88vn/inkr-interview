@@ -6,3 +6,4 @@ export { default as CustomButton } from "./CustomButton";
 export { default as Chapter } from "./Chapter";
 export { default as Icon } from "./Icon";
 export { default as CustomText } from "./CustomText";
+export { default as DotInline } from "./DotInline";

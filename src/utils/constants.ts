@@ -5,11 +5,13 @@ export const IMAGE_PATH = process.env.NEXT_PUBLIC_IMAGES_PATH;
 const COLOR_1 = "rgba(255, 255, 255, 0.45)";
 const COLOR_2 = "rgba(255, 255, 255, 0.65)";
 const COLOR_3 = "rgba(255, 255, 255, 0.85)";
+const COLOR_INKR_PURPLE = "#A379FF";
 
 export const LIST_COLOR = {
   COLOR_1,
   COLOR_2,
   COLOR_3,
+  COLOR_INKR_PURPLE,
 };
 
 // font size

@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import React from "react";
 
-import { CustomText, Icon } from "src/components";
+import { CustomText, DotInline, Icon } from "src/components";
 import {
   LIST_COLOR,
   LIST_FONT_SIZE,
@@ -38,7 +38,10 @@ const PricingPromotion = () => {
             </CustomText>
           </Row>
         </Col>
-        <Col className={styles.pricing_promotion_col} span={12}>
+        <Col
+          className={`${styles.pricing_promotion_col} ${styles.pricing_promotion_col_right}`}
+          span={12}
+        >
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_1}
@@ -60,8 +63,10 @@ const PricingPromotion = () => {
               color={LIST_COLOR.COLOR_3}
               fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
               lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              style={{ display: "flex", alignItems: "center" }}
             >
-              ( <Icon icon="union" border={false} /> 5/chapter)
+              <span>(&nbsp;</span>
+              <Icon icon="union" border={false} /> <span>&nbsp;5/chapter)</span>
             </CustomText>
           </Row>
         </Col>
@@ -71,8 +76,32 @@ const PricingPromotion = () => {
 
   const renderRow2 = () => {
     return (
-      <Row className={`${styles.pricing_promotion_row}`}>
-        <Col className={styles.pricing_promotion_col} span={24}>
+      <Row
+        className={`${styles.pricing_promotion_row}`}
+        align="middle"
+        justify="space-between"
+      >
+        <Col className={styles.pricing_promotion_col} span={12}>
+          <Row>
+            <CustomText
+              color={LIST_COLOR.COLOR_3}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+            >
+              Total Price
+            </CustomText>
+          </Row>
+          <Row>
+            <CustomText
+              color={LIST_COLOR.COLOR_1}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            >
+              Instant access to all chapters <DotInline /> No ad
+            </CustomText>
+          </Row>
+        </Col>
+        <Col className={styles.pricing_promotion_col} span={12}>
           Row 2
         </Col>
       </Row>
@@ -83,8 +112,34 @@ const PricingPromotion = () => {
     return (
       <Row
         className={`${styles.pricing_promotion_row3} ${styles.pricing_promotion_row}`}
+        align="middle"
+        justify="space-between"
       >
-        <Col className={styles.pricing_promotion_col} span={24}>
+        <Col className={styles.pricing_promotion_col} span={12}>
+          <Row align="middle">
+            <CustomText
+              color={LIST_COLOR.COLOR_INKR_PURPLE}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+              fontWeight="500"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <span>Save money with INKR Extra &nbsp;</span>
+              <Icon border={false} icon="currency" />
+            </CustomText>
+          </Row>
+          <Row>
+            <CustomText
+              color={LIST_COLOR.COLOR_1}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            >
+              Instant access to all chapters <DotInline /> No ad <DotInline />{" "}
+              Extra saving
+            </CustomText>
+          </Row>
+        </Col>
+        <Col className={styles.pricing_promotion_col} span={12}>
           Row 3
         </Col>
       </Row>
