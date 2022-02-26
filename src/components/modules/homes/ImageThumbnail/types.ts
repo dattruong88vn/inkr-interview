@@ -3,4 +3,5 @@ export interface ImageThumbnailProps {
   alt: string;
   width: number;
   height: number;
+  progress?: number;
 }

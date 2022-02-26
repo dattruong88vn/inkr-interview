@@ -5,3 +5,5 @@ export { default as MainPosterContent } from "./MainPosterContent";
 export { default as LastRead } from "./LastRead";
 export { default as PricingPromotion } from "./PricingPromotion";
 export { default as GetApp } from "./GetApp";
+export { default as ImageThumbnail } from "./ImageThumbnail";
+export { default as Chapter } from "./Chapter";

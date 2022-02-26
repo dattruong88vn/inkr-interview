@@ -9,7 +9,7 @@ import styles from "./styles.module.css";
 
 function MainPoster(props: MainPosterProps) {
   return (
-    <Row className={styles.container} gutter={24}>
+    <Row className={styles.main_poster_container} gutter={24}>
       <Col>
         <ImageThumbnail
           url={`${IMAGE_PATH}/image-1.jpg`}
