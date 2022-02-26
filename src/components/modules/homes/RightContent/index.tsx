@@ -1,6 +1,7 @@
 import { Row, Col } from "antd";
 
 import { Section, GetApp, RelatedTitles } from "src/components";
+import { Comments } from "..";
 
 const RightContent = () => {
   return (
@@ -14,7 +15,9 @@ const RightContent = () => {
         </Section>
       </Row>
       <Row>
-        <Section title="12 Comments">dat</Section>
+        <Section title="12 Comments">
+          <Comments />
+        </Section>
       </Row>
       <Row>
         <Section>

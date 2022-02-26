@@ -18,7 +18,7 @@ export default function Icon({
       <IcomoonReact
         iconSet={iconSet}
         color={color}
-        size={size || LIST_FONT_SIZE.FONT_SIZE_2}
+        size={size || LIST_FONT_SIZE.FONT_SIZE_16}
         icon={icon}
       />
     );

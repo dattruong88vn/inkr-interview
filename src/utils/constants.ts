@@ -11,6 +11,7 @@ const COLOR_INKR_PURPLE = "#A379FF";
 const COLOR_INKR_PURPLE_2 = "#651FFF";
 const COLOR_INKR_PURPLE_6 = "#844CFF";
 const COLOR_NEUTRAL = "#262626";
+const COLOR_NEUTRAL_5 = "#434343";
 
 export const LIST_COLOR = {
   COLOR_1,
@@ -21,38 +22,47 @@ export const LIST_COLOR = {
   COLOR_INKR_PURPLE_2,
   COLOR_INKR_PURPLE_6,
   COLOR_NEUTRAL,
+  COLOR_NEUTRAL_5,
 };
 
 // font size
-const FONT_SIZE_1 = "14px";
-const FONT_SIZE_2 = "16px";
-const FONT_SIZE_3 = "18px";
-const FONT_SIZE_4 = "20px";
-const FONT_SIZE_5 = "12px";
+const FONT_SIZE_14 = "14px";
+const FONT_SIZE_16 = "16px";
+const FONT_SIZE_18 = "18px";
+const FONT_SIZE_20 = "20px";
+const FONT_SIZE_12 = "12px";
+const FONT_SIZE_11 = "11px";
 
 export const LIST_FONT_SIZE = {
-  FONT_SIZE_1,
-  FONT_SIZE_2,
-  FONT_SIZE_3,
-  FONT_SIZE_4,
-  FONT_SIZE_5,
+  FONT_SIZE_14,
+  FONT_SIZE_16,
+  FONT_SIZE_18,
+  FONT_SIZE_20,
+  FONT_SIZE_12,
+  FONT_SIZE_11,
 };
 
 // line height
-const LINE_HEIGHT_1 = "20px";
-const LINE_HEIGHT_2 = "22px";
-const LINE_HEIGHT_3 = "24px";
-const LINE_HEIGHT_4 = "28px";
+const LINE_HEIGHT_20 = "20px";
+const LINE_HEIGHT_22 = "22px";
+const LINE_HEIGHT_24 = "24px";
+const LINE_HEIGHT_28 = "28px";
+const LINE_HEIGHT_18 = "18px";
 
 export const LIST_LINE_HEIGHT = {
-  LINE_HEIGHT_1,
-  LINE_HEIGHT_2,
-  LINE_HEIGHT_3,
-  LINE_HEIGHT_4,
+  LINE_HEIGHT_20,
+  LINE_HEIGHT_22,
+  LINE_HEIGHT_24,
+  LINE_HEIGHT_28,
+  LINE_HEIGHT_18,
 };
 export const DEFAULT_STYLE_TEXT = {
   color: COLOR_1,
-  fontSize: FONT_SIZE_2,
+  fontSize: FONT_SIZE_16,
   fontWeight: "normal",
   lineHeight: "20px",
 };
+
+// comment
+export const COMMENT_DEFAULT =
+  "I had no idea such a sequel was coming as I thought the show had ended and Kyoto animation took a hard hit from the tragedy but currently 4 episodes in as of writing this review, and I love every second of it.";

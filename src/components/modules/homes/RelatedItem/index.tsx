@@ -20,8 +20,8 @@ const RelatedItem = ({ url, author, reads, name }: RelatedItemProps) => {
         <Row>
           <CustomText
             color={LIST_COLOR.COLOR_3}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_2}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
+            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
           >
             {name}
           </CustomText>
@@ -31,8 +31,8 @@ const RelatedItem = ({ url, author, reads, name }: RelatedItemProps) => {
           &nbsp;
           <CustomText
             color={LIST_COLOR.COLOR_INKR_PURPLE_6}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_2}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
+            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
             fontWeight="500"
           >
             EXCLUSIVE
@@ -41,8 +41,8 @@ const RelatedItem = ({ url, author, reads, name }: RelatedItemProps) => {
         <Row>
           <CustomText
             color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
           >
             {author}
           </CustomText>
@@ -50,8 +50,8 @@ const RelatedItem = ({ url, author, reads, name }: RelatedItemProps) => {
         <Row>
           <CustomText
             color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
           >
             {reads} reads
           </CustomText>

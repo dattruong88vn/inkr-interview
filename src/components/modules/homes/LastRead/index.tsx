@@ -28,8 +28,8 @@ function LastRead(props: LastReadProps) {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_4}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_4}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_20}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_28}
               style={{ marginBottom: 4 }}
             >
               10 Chapters
@@ -38,8 +38,8 @@ function LastRead(props: LastReadProps) {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_2}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
             >
               New chapter every Thursday
             </CustomText>

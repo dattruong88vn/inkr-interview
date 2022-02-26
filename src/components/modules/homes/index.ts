@@ -9,3 +9,6 @@ export { default as ImageThumbnail } from "./ImageThumbnail";
 export { default as Chapter } from "./Chapter";
 export { default as RelatedTitles } from "./RelatedTitles";
 export { default as RelatedItem } from "./RelatedItem";
+export { default as Comments } from "./Comments";
+export { default as CommentContent } from "./CommentContent";
+export { default as CommentInput } from "./CommentInput";

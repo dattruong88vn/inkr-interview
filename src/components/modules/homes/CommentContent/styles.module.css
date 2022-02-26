@@ -1,0 +1,7 @@
+.comment_content_wrapper {
+}
+
+.comment_avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}

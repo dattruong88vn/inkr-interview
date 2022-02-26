@@ -17,8 +17,8 @@ function GetApp({}: GetAppProps) {
         <Row>
           <CustomText
             color={LIST_COLOR.COLOR_3}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_2}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
+            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
             style={{ marginBottom: 4 }}
           >
             Get The App
@@ -27,8 +27,8 @@ function GetApp({}: GetAppProps) {
         <Row>
           <CustomText
             color={LIST_COLOR.COLOR_2}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+            lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
           >
             Love this title? Scan the QR code to continue reading right on your
             mobile devices.

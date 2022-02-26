@@ -44,8 +44,8 @@ function Chapter({
               <Row>
                 <CustomText
                   color={LIST_COLOR.COLOR_2}
-                  fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-                  lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+                  fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+                  lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
                 >
                   {title}
                 </CustomText>
@@ -54,8 +54,8 @@ function Chapter({
                 <Row>
                   <CustomText
                     color={LIST_COLOR.COLOR_1}
-                    fontSize={LIST_FONT_SIZE.FONT_SIZE_5}
-                    lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_1}
+                    fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
+                    lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_20}
                   >
                     Last read {lastRead}{" "}
                   </CustomText>
@@ -75,8 +75,8 @@ function Chapter({
             <Row justify="end">
               <CustomText
                 color={LIST_COLOR.COLOR_2}
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
               >
                 FREE
               </CustomText>

@@ -23,8 +23,8 @@ const PricingPromotion = () => {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
             >
               FREE
             </CustomText>
@@ -32,8 +32,8 @@ const PricingPromotion = () => {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
             >
               3 Chapters
             </CustomText>
@@ -46,8 +46,8 @@ const PricingPromotion = () => {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
             >
               LOCKED
             </CustomText>
@@ -55,15 +55,15 @@ const PricingPromotion = () => {
           <Row align="middle">
             <CustomText
               color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
             >
               7 Chapters&nbsp;
             </CustomText>
             <CustomText
               color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
               style={{ display: "flex", alignItems: "center" }}
             >
               <span>(&nbsp;</span>
@@ -86,8 +86,8 @@ const PricingPromotion = () => {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_3}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
             >
               Total Price
             </CustomText>
@@ -95,8 +95,8 @@ const PricingPromotion = () => {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
             >
               Instant access to all chapters <DotInline /> No ad
             </CustomText>
@@ -127,8 +127,8 @@ const PricingPromotion = () => {
           <Row align="middle">
             <CustomText
               color={LIST_COLOR.COLOR_INKR_PURPLE}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_2}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_22}
               fontWeight="500"
               style={{ display: "flex", alignItems: "center" }}
             >
@@ -139,8 +139,8 @@ const PricingPromotion = () => {
           <Row>
             <CustomText
               color={LIST_COLOR.COLOR_1}
-              fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
-              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+              fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
+              lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
             >
               Instant access to all chapters <DotInline /> No ad <DotInline />{" "}
               Extra saving
@@ -154,8 +154,8 @@ const PricingPromotion = () => {
             >
               <CustomText
                 color={LIST_COLOR.COLOR_3}
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_4}
-                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_4}
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_20}
+                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_28}
               >
                 -50%
               </CustomText>
@@ -166,7 +166,7 @@ const PricingPromotion = () => {
               <Icon icon="union" border={false} />
               &nbsp;
               <CustomText
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_5}
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_12}
                 color={LIST_COLOR.COLOR_4}
                 style={{ textDecorationLine: "line-through" }}
               >
@@ -175,8 +175,8 @@ const PricingPromotion = () => {
               &nbsp;
               <CustomText
                 color={LIST_COLOR.COLOR_3}
-                fontSize={LIST_FONT_SIZE.FONT_SIZE_2}
-                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_3}
+                fontSize={LIST_FONT_SIZE.FONT_SIZE_16}
+                lineHeight={LIST_LINE_HEIGHT.LINE_HEIGHT_24}
               >
                 18
               </CustomText>
@@ -197,7 +197,7 @@ const PricingPromotion = () => {
         <Col span={24}>
           <CustomText
             color={LIST_COLOR.COLOR_1}
-            fontSize={LIST_FONT_SIZE.FONT_SIZE_1}
+            fontSize={LIST_FONT_SIZE.FONT_SIZE_14}
           >
             Want to read for free? Learn more
           </CustomText>
