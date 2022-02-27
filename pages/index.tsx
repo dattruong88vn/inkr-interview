@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { MainTemplate } from "src/components";
 
-import styles from "./styles/home.module.css";
+import styles from "styles/home.module.css";
 
 const Home: NextPage = () => {
   return (
